@@ -1,0 +1,28 @@
+.title {
+  position: relative;
+  
+  &--page {
+    /* placeholder */
+  }
+  
+  &--section {
+    padding-block-start: 1rem;
+    
+    &:before {
+      height: 10px;
+      width: 72px;
+      border-radius: 5px;
+      display: block;
+      position: absolute;
+      margin: auto;
+      background: var(--zero-color-accent);
+      content: "";
+      top: 0;
+      transform: translateX(-1.5rem);
+    }
+  }
+  
+  &--card {
+    /* placeholder */
+  }
+}

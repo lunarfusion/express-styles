@@ -1,0 +1,13 @@
+.header {
+  background-color: var(--zero-color-accent);
+  padding: calc(var(--zero-size-gap-y) * 2) calc(var(--zero-size-gap-x) * 2);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@media (max-width: 992px) {
+  .header {
+    flex-wrap: wrap;
+  }
+}

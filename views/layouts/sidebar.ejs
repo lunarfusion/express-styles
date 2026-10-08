@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('../partials/head.ejs') %>
+
+<body>
+  <%- include('../partials/header.ejs') %>
+
+  <main class="main-content">
+    <div class="page page--content">
+      <div class="container">
+        <div class="row row--wrap"><!--wraps content and sidebar-->
+          <div class="col col--9"><%- body %></div>
+          <div class="col col--3">
+            <side><%- include('../partials/nav-sidebar.ejs') %></side>
+          </div>
+        </div><!--end row-->
+      </div><!--end container -->
+    </div>
+  </main>
+
+  <%- include('../partials/footer.ejs') %>
+</body>
+
+</html>

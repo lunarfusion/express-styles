@@ -1,0 +1,6 @@
+/*** FONTS ***/
+:root {
+  --zero-font-primary: "Golos Text", sans-serif;
+  --zero-font-secondary: "Golos Text", sans-serif;
+  --zero-font-code: "Inconsolata", monospace;
+}

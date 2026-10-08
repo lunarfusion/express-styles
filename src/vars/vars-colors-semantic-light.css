@@ -1,0 +1,35 @@
+:root {
+  /* Background */
+  --zero-color-bg: var(--zero-color-white);
+  
+  /* Foreground */
+  --zero-color-fg: var(--zero-color-gray-010);
+  --zero-color-fg-subdued: var(--zero-color-gray-030);
+  --zero-color-fg-inverted: var(--zero-color-white);
+  
+  /* Border */
+  --zero-color-border: var(--zero-color-gray-040);
+  --zero-color-border-subdued: var(--zero-color-gray-060);
+  
+  /* Accent */
+  --zero-color-accent: var(--zero-color-teal-030);
+  
+  /* Link */
+  --zero-color-link-default: var(--zero-color-teal-030);
+  --zero-color-link-hover: var(--zero-color-teal-020);
+  --zero-color-link-active: var(--zero-color-teal-040);
+  --zero-color-link-decoration: var(--zero-color-teal-060);
+  
+  /* Button */
+  --zero-color-button-default: var(--zero-color-teal-030);
+  --zero-color-button-hover: var(--zero-color-teal-020);
+  --zero-color-button-active: var(--zero-color-teal-040);
+  
+  /* Focus Indicator */
+  --zero-color-focus-indicator: var(--zero-color-violet-070);
+  
+  /* Brand */
+  --zero-color-brand-primary: var(--zero-color-teal-030);
+  --zero-color-brand-secondary: var(--zero-color-blue-060);
+  --zero-color-brand-tertiary: var(--zero-color-violet-080);
+}

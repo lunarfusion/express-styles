@@ -1,0 +1,41 @@
+/*** VARS ***/
+/* color vars pulled in through head */
+@import "vars/vars-fonts.css";
+@import "vars/vars-shadows.css";
+@import "vars/vars-spacing.css";
+@import "vars/vars-transitions-animations.css";
+@import "vars/vars-colors-primitive.css";
+@import "vars/vars-colors-semantic-light.css";
+/* @import "vars/vars-colors-semantic-dark.css"; */
+
+/*** *** UTILITIES *** ***/
+@import "utilities/_flexbox.css";
+@import "utilities/_utilities-text.css";
+@import "utilities/_utilities-spacing.css";
+@import "utilities/_sr-only.css";
+
+/*** *** GENERIC *** ***/
+@import "generic/_base-resets.css";
+
+/*** *** ELEMENTS *** ***/
+@import "elements/_headings.css";
+@import "elements/_paragraphs.css";
+@import "elements/_lists.css";
+@import "elements/_link.css";
+@import "elements/_img.css";
+@import "elements/_icon.css";
+@import "elements/_divider.css";
+
+/*** *** COMPONENTS *** ***/
+@import "components/_swatch.css";
+@import "components/_badge.css";
+@import "components/_title.css";
+@import "components/_button.css";
+
+/*** *** OBJECTS *** ***/
+@import "objects/_page.css";
+@import "objects/_main.css";
+@import "objects/_header.css";
+@import "objects/_footer.css";
+@import "objects/_section.css";
+@import "objects/_article.css";

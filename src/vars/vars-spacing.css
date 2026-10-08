@@ -1,0 +1,29 @@
+:root {
+  /* corner radius */
+  --zero-size-radius-sm: 8px;
+  --zero-size-radius-med: 12px;
+  --zero-size-radius-lrg: 16px;
+  
+  /* focus indicator */
+  --zero-size-gap-focus-indicator: 2px;
+  --zero-size-focus-indicator: 2px;
+  --color-focus-indicator: hsl(190, 100%, 50%);
+  
+  /* component */
+  --zero-size-border-component: 1.5px;
+  --zero-size-gap-x: 1.5rem;
+  --zero-size-gap-y: 1rem;
+  
+  /* text size */
+  --zero-size-text-xxxxl: 3.6rem;
+  --zero-size-text-xxxl: 2.8rem;
+  --zero-size-text-xxl: 2.1rem;
+  --zero-size-text-xl: 1.7rem;
+  --zero-size-text-l: 1.4rem;
+  --zero-size-text-m: 1.2rem;
+  
+  --zero-size-text: 16px;
+  --zero-size-text-s: 14px;
+  --zero-size-text-xs: 12px;
+  --zero-size-text-xxs: 10px;
+}

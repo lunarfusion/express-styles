@@ -1,0 +1,4 @@
+.article {
+  padding: var(--zero-size-gap-y) calc(var(--zero-size-gap-x) * 2);
+  margin-block: 1rem;
+}

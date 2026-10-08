@@ -1,0 +1,8 @@
+/* Not active - change in src/style.css */
+:root {
+  @media (prefers-color-scheme: dark) {
+    --zero-color-fg: var(--zero-color-white);
+    --zero-color-bg: var(--zero-color-gray-090);
+    --zero-color-accent: var(--zero-color-teal-030);
+  }
+}

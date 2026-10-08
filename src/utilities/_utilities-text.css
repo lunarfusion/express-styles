@@ -1,0 +1,46 @@
+/*** UTILITIES for TEXT ***/
+.lead {
+  font-size: var(--zero-size-text-m);
+  line-height: 1.6;
+}
+
+.deck {
+  font-size: var(--zero-size-text-l);
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+.small {
+  font-size: var(--zero-size-text-s);
+}
+
+.metabit {
+  position: relative;
+  color: var(--zero-color-fg);
+  font-size: 0.85rem;
+  font-weight: 600;
+  display: inline;
+  padding-inline: 0.8rem;
+  
+  color: var(--zero-color-fg);
+  font-size: 0.75rem;
+  line-height: 1;
+  margin: 0;
+  font-weight: 600;
+  display: inline;
+  
+  &:not(&:last-child) {
+    padding-inline-start: 0;
+    
+    &::after {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      content: "✦";
+      margin-inline-end: 0;
+      margin-inline-start: 0.5rem;
+      font-size: 0.6rem;
+      line-height: 1.5;
+    }
+  }
+}

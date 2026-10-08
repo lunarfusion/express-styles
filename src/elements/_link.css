@@ -1,0 +1,95 @@
+/*** Links within paragraphs and lists ***/
+p a,
+li a,
+.link {
+  color: var(--zero-color-link-default);
+  transition: var(--zero-transition-basic);
+  font-weight: 500;
+  text-decoration: none;
+  background: linear-gradient(to right, var(--zero-color-link-decoration), var(--zero-color-link-decoration));
+  background-repeat: no-repeat;
+  background-position: 0% 105%;
+  background-size: 0% 3px;
+  
+  &:hover,
+  &:visited:hover {
+    color: var(--zero-color-link-hover);
+    background-size: 100% 3px;
+  }
+  
+  &:focus,
+  &:focus-visible,
+  &:visited:focus,
+  &:visited:focus-visible {
+    color: var(--zero-color-link-focus);
+    outline: 0;
+    border-color: var(--zero-color-focus-indicator);
+  }
+  
+  &:active {
+    color: var(--zero-color-link-active);
+  }
+  
+  &:visited {
+    color: var(--zero-color-link-default);
+  }
+  
+  &--cta {
+    font-size: var(--zero-size-text-m);
+    line-height: 1;
+    font-weight: 500;
+    display: inline-block;
+    position: relative;
+    padding-inline-end: calc(var(--zero-size-text-m) + 12px);
+    padding-inline-start: 12px;
+    padding-block: 6px;
+    background-repeat: no-repeat;
+    background-position: 0% 50%;
+    background-size: 4%;
+    clip-path: polygon(0% 0%, 90% 0%, 100% 50%, 90% 100%, 0% 100%);
+    
+    &:hover {
+      background-size: 100%;
+      
+      &::after {
+        transform: translateX(0.25rem);
+      }
+    }
+  }
+  
+  &--cta-alt {
+    font-size: var(--zero-size-text-m);
+    line-height: 1;
+    font-weight: 500;
+    display: inline-block;
+    position: relative;
+    padding-inline-end: calc(var(--zero-size-text-m) + 8px);
+    padding-inline-start: 4px;
+    padding-block: 6px;
+    background-repeat: no-repeat;
+    background-position: 0% 105%;
+    background-size: 0% 5px;
+    
+    /* if icon after */
+    &::after {
+      position: absolute;
+      margin-inline-start: 4px;
+      transition: inherit;
+      display: inline-block;
+      width: var(--zero-size-text-m);
+      height: var(--zero-size-text-m);
+      content: "";
+      mask-image: url("../../assets/icons/arrow-right-circle.svg");
+      mask-repeat: no-repeat;
+      background: var(--zero-color-link-default);
+    }
+    
+    &:hover {
+      background-size: 100% 5px;
+      
+      &::after {
+        transform: translateX(0.25rem);
+      }
+    }
+  }
+}

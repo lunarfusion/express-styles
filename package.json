@@ -1,0 +1,49 @@
+{
+  "name": "Express Styles",
+  "version": "1.0",
+  "description": "...",
+  "author": "Monet",
+  "main": "index.js",
+  "license": "ISC",
+  "dependencies": {
+    "chokidar": "^3.5.3",
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "express-ejs-layouts": "^2.5.1",
+    "express-http-proxy": "^2.1.1",
+    "gulp": "^5.0.0",
+    "gulp-postcss": "^10.0.0",
+    "http-proxy": "^1.18.1",
+    "onchange": "^7.1.0",
+    "postcss": "^8.4.38",
+    "postcss-cli": "^11.0.1",
+    "postcss-custom-media": "^10.0.6",
+    "postcss-import": "^16.1.0",
+    "postcss-nested": "^6.0.1",
+    "shelljs": "^0.10.0",
+    "stylelint": "^17.11.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.19",
+    "nodemon": "^2.0.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "node tasks/watch.js",
+    "compile:css": "node-sass sass/ -o ./ && stylelint '*.css' --fix || true && stylelint '*.css' --fix",
+    "dev": "npm run watch",
+    "start": "nodemon app.js"
+  },
+  "eslintConfig": {
+    "rules": {
+      "semi": "off",
+      "prettier/prettier": [
+        "error",
+        {
+          "semi": false
+        }
+      ]
+    },
+    "root": true
+  }
+}

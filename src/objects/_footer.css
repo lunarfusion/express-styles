@@ -1,0 +1,4 @@
+.footer {
+  background-color: var(--zero-color-accent);
+  padding: var(--zero-size-gap-y) var(--zero-size-gap-x);
+}

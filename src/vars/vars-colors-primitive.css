@@ -1,0 +1,74 @@
+:root {
+  --zero-color-gray-010: hsl(0, 0%, 10%);
+  --zero-color-gray-012: hsl(0, 0%, 12%);
+  --zero-color-gray-015: hsl(0, 0%, 15%);
+  --zero-color-gray-017: hsl(0, 0%, 17%);
+  --zero-color-gray-020: hsl(0, 0%, 20%);
+  --zero-color-gray-030: hsl(0, 0%, 30%);
+  --zero-color-gray-040: hsl(0, 0%, 40%);
+  --zero-color-gray-050: hsl(0, 0%, 50%);
+  --zero-color-gray-060: hsl(0, 0%, 60%);
+  --zero-color-gray-070: hsl(0, 0%, 70%);
+  --zero-color-gray-075: hsl(0, 0%, 75%);
+  --zero-color-gray-080: hsl(0, 0%, 80%);
+  --zero-color-gray-085: hsl(0, 0%, 85%);
+  --zero-color-gray-090: hsl(0, 0%, 90%);
+  --zero-color-gray-095: hsl(0, 0%, 95%);
+  --zero-color-white: hsl(0, 0%, 100%);
+  
+  
+  /*** Teal ***/
+  --zero-color-teal-005: hsl(190, 100%, 5%);
+  --zero-color-teal-010: hsl(190, 100%, 10%);
+  --zero-color-teal-012: hsl(190, 100%, 12%);
+  --zero-color-teal-015: hsl(190, 100%, 15%);
+  --zero-color-teal-017: hsl(190, 100%, 17%);
+  --zero-color-teal-020: hsl(190, 100%, 20%);
+  /* 30 = accessible fg on white or black */
+  --zero-color-teal-030: hsl(190, 100%, 30%);
+  --zero-color-teal-040: hsl(190, 100%, 40%);
+  --zero-color-teal-050: hsl(190, 100%, 50%);
+  --zero-color-teal-060: hsl(190, 100%, 60%);
+  --zero-color-teal-070: hsl(190, 100%, 70%);
+  --zero-color-teal-075: hsl(190, 100%, 75%);
+  --zero-color-teal-080: hsl(190, 100%, 80%);
+  --zero-color-teal-085: hsl(190, 100%, 85%);
+  --zero-color-teal-090: hsl(190, 100%, 90%);
+  --zero-color-teal-095: hsl(190, 100%, 95%);
+  
+  /*** blue ***/
+  --zero-color-blue-005: hsl(220, 100%, 5%);
+  --zero-color-blue-010: hsl(220, 100%, 10%);
+  --zero-color-blue-012: hsl(220, 100%, 12%);
+  --zero-color-blue-015: hsl(220, 100%, 15%);
+  --zero-color-blue-017: hsl(220, 100%, 17%);
+  --zero-color-blue-020: hsl(220, 100%, 20%);
+  --zero-color-blue-030: hsl(220, 100%, 30%);
+  --zero-color-blue-040: hsl(220, 100%, 40%);
+  --zero-color-blue-050: hsl(220, 100%, 50%);
+  --zero-color-blue-060: hsl(220, 100%, 60%);
+  --zero-color-blue-070: hsl(220, 100%, 70%);
+  --zero-color-blue-075: hsl(220, 100%, 75%);
+  --zero-color-blue-080: hsl(220, 100%, 80%);
+  --zero-color-blue-085: hsl(220, 100%, 85%);
+  --zero-color-blue-090: hsl(220, 100%, 90%);
+  --zero-color-blue-095: hsl(220, 100%, 95%);
+  
+  /*** violet ***/
+  --zero-color-violet-005: hsl(250, 100%, 5%);
+  --zero-color-violet-010: hsl(250, 100%, 10%);
+  --zero-color-violet-012: hsl(250, 100%, 12%);
+  --zero-color-violet-015: hsl(250, 100%, 15%);
+  --zero-color-violet-017: hsl(250, 100%, 17%);
+  --zero-color-violet-020: hsl(250, 100%, 20%);
+  --zero-color-violet-030: hsl(250, 100%, 30%);
+  --zero-color-violet-040: hsl(250, 100%, 40%);
+  --zero-color-violet-050: hsl(250, 100%, 50%);
+  --zero-color-violet-060: hsl(250, 100%, 60%);
+  --zero-color-violet-070: hsl(250, 100%, 70%);
+  --zero-color-violet-075: hsl(250, 100%, 75%);
+  --zero-color-violet-080: hsl(250, 100%, 80%);
+  --zero-color-violet-085: hsl(250, 100%, 85%);
+  --zero-color-violet-090: hsl(250, 100%, 90%);
+  --zero-color-violet-095: hsl(250, 100%, 95%);
+}

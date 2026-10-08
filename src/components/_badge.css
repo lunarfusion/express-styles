@@ -1,0 +1,7 @@
+.badge {
+  font-size: var(--zero-size-text-s);
+  color: var(--zero-color-fg-subdued);
+  text-transform: uppercase;
+  line-height: 1;
+  margin-block: 1rem;
+}

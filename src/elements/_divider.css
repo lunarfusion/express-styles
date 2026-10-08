@@ -1,0 +1,21 @@
+.divider {
+  border: 0;
+  border-bottom: 1px solid var(--zero-color-accent);
+  margin: 2rem 0;
+  width: 100%;
+  position: relative;
+  overflow: visible;
+  
+  &::after {
+    content: "";
+    height: 1rem;
+    width: 1rem;
+    inset: 0;
+    margin: auto;
+    display: inline-block;
+    position: absolute;
+    background: var(--zero-color-accent);
+    mask-image: url('../../assets/icons/flower2.svg');
+    mask-repeat: no-repeat;
+  }
+}

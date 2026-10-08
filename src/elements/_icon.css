@@ -1,0 +1,13 @@
+.icon {
+  &--size-sm {
+    inline-size: 20px;
+  }
+  
+  &--size-m {
+    inline-size: 50px;
+  }
+  
+  &--size-l {
+    inline-size: 80px;
+  }
+}

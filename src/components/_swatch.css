@@ -1,0 +1,63 @@
+.swatch {
+  display: block;
+  position: relative;
+  inline-size: 100px;
+  block-size: 100px;
+  padding: 0.5rem;
+  margin: 0.5rem 0.5rem 1.5rem;
+  border: 1px solid var(--zero-color-border-subdued);
+  border-radius: 4px;
+  padding-block-start: 100px;
+  
+  &__label {
+    display: inline-block;
+    font-size: var(--zero-size-text-xxs);
+    line-height: 1.2;
+    color: var(--zero-color-fg-subdued);
+    background: var(--zero-color-bg);
+    padding: 0.25rem 0.35rem;
+    border-radius: 2px;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+  }
+  
+  &--color-bg {
+    background: var(--zero-color-bg);
+  }
+  
+  /* Foreground */
+  &--color-fg {
+    background: var(--zero-color-fg);
+  }
+  
+  &--color-fg-subdued {
+    background: var(--zero-color-fg-subdued);
+  }
+  
+  /* Border */
+  &--color-border {
+    background: var(--zero-color-border);
+  }
+  
+  &--color-border-subdued {
+    background: var(--zero-color-border-subdued);
+  }
+  
+  /* Accent */
+  &--color-accent {
+    background: var(--zero-color-accent);
+  }
+  
+  /* Brand */
+  &--color-brand-primary {
+    background: var(--zero-color-brand-primary);
+  }
+  
+  &--color-brand-secondary {
+    background: var(--zero-color-brand-secondary);
+  }
+  
+  &--color-brand-tertiary {
+    background: var(--zero-color-brand-tertiary);
+  }
+}

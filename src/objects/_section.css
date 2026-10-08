@@ -1,0 +1,4 @@
+.section {
+  background-color: var(--zero-color-bg-base);
+  padding-block: calc(var(--zero-size-gap-y) * 2);
+}
