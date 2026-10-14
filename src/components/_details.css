@@ -1,0 +1,21 @@
+.details {
+  background: var(--zero-color-bg-surface-b);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  margin: 1px 0;
+  
+  
+  &__summmary {
+    font-weight: 600;
+    padding-block: 0.5rem;
+    
+    &::marker {
+      color: var(--zero-color-brand-primary);
+    }
+  }
+  
+  &__content {
+    background: var(--zero-color-bg);
+    padding: 1rem;
+  }
+}

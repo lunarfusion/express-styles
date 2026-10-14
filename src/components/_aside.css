@@ -1,0 +1,37 @@
+.aside {
+  --height-aside-label: 16px;
+  
+  position: relative;
+  background: var(--zero-color-bg-surface-b);
+  padding: 1rem 2rem;
+  margin: 3rem 1rem;
+  border-radius: 12px;
+  
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(1rem, -0.5rem);
+    background: var(--zero-color-brand-primary);
+    color: var(--zero-color-fg-inverted);
+    block-size: var(--height-aside-label);
+    border-radius: var(--height-aside-label);
+    padding: 0.25rem 0.75rem;
+    content: "aside";
+    text-transform: uppercase;
+    font-size: var(--zero-size-text-xs);
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: 1px;
+  }
+  
+  &__title > * {
+    font-size: var(--zero-size-text-m);
+  }
+  
+  &__content {
+    p {
+      font-size: var(--zero-size-text-s);
+    }
+  }
+}

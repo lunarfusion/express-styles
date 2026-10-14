@@ -1,0 +1,36 @@
+.nav {
+  
+  &__menu {
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 2rem;
+  }
+  
+  &__item {}
+  
+  &__link {
+    color: var(--zero-color-fg-inverted);
+    
+    &:visited {
+      color: var(--zero-color-fg-inverted);
+    }
+    
+    &:hover {
+      color: var(--zero-color-fg-inverted);
+    }
+    
+    &:focus,
+    &:focus-visible,
+    &:visited:focus,
+    &:visited:focus-visible {
+      color: var(--zero-color-fg-inverted);
+      outline: 0;
+      border-color: var(--zero-color-focus-indicator);
+    }
+    
+    &:active {
+      color: var(--zero-color-link-active);
+    }
+  }
+}

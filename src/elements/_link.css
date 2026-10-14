@@ -11,8 +11,7 @@ li a,
   background-position: 0% 105%;
   background-size: 0% 3px;
   
-  &:hover,
-  &:visited:hover {
+  &:hover {
     color: var(--zero-color-link-hover);
     background-size: 100% 3px;
   }

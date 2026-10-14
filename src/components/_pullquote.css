@@ -1,0 +1,45 @@
+.pullquote {
+  position: relative;
+  display: inline-block;
+  padding: 2rem 3rem;
+  margin: 2rem 1rem;
+  font-size: var(--zero-size-text-xl);
+  font-weight: 700;
+  line-height: 1.1;
+  text-align: center;
+  
+  &::before,
+  &::after {
+    position: absolute;
+    display: inline-block;
+    height: 2rem;
+    width: 2rem;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    color: var(--zero-color-brand-primary);
+    font-size: calc(var(--zero-size-text-l) * 3);
+  }
+  
+  &::before {
+    content: "“";
+    left: 0;
+  }
+  
+  &::after {
+    content: "”";
+    right: 0;
+  }
+  
+  &--float-left {
+    float: left;
+  }
+  
+  &--float-right {
+    float: right;
+  }
+  
+  &--width-50 {
+    inline-size: 50%;
+  }
+}

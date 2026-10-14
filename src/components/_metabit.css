@@ -1,0 +1,31 @@
+.metabit {
+  --metabit-space: 1.5rem;
+  
+  position: relative;
+  display: inline-flex;
+  inline-size: 100%;
+  padding: 1rem 0.5rem;
+  border-block-start: 1px dotted var(--zero-color-border-subdued);
+  gap: var(--metabit-space);
+  
+  &__item {
+    color: var(--zero-color-fg);
+    font-weight: 500;
+    font-size: 0.75rem;
+    line-height: 1;
+    
+    &:not(&:last-child) {
+      
+      &::after {
+        position: absolute;
+        content: "✦";
+        width: var(--metabit-space);
+        color: var(--zero-color-brand-primary);
+        font-size: 0.6rem;
+        line-height: 1.5;
+        text-align: center;
+      }
+    }
+  }
+  
+}
