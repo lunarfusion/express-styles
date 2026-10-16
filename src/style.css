@@ -38,6 +38,7 @@
 @import "components/_pullquote.css";
 @import "components/_figure.css";
 @import "components/_metabit.css";
+@import "components/_banner.css";
 
 /*** *** OBJECTS *** ***/
 @import "objects/_page.css";

@@ -3,7 +3,7 @@
   
   position: relative;
   background: var(--zero-color-bg-surface-b);
-  padding: 1rem 2rem;
+  padding: 2rem 2rem 1rem 2rem;
   margin: 3rem 1rem;
   border-radius: 12px;
   
@@ -25,12 +25,16 @@
     letter-spacing: 1px;
   }
   
+  &__title,
   &__title > * {
     font-size: var(--zero-size-text-m);
+    font-weight: 600;
   }
   
   &__content {
-    p {
+
+    p,
+    li {
       font-size: var(--zero-size-text-s);
     }
   }

@@ -39,29 +39,6 @@ li a,
     font-weight: 500;
     display: inline-block;
     position: relative;
-    padding-inline-end: calc(var(--zero-size-text-m) + 12px);
-    padding-inline-start: 12px;
-    padding-block: 6px;
-    background-repeat: no-repeat;
-    background-position: 0% 50%;
-    background-size: 4%;
-    clip-path: polygon(0% 0%, 90% 0%, 100% 50%, 90% 100%, 0% 100%);
-    
-    &:hover {
-      background-size: 100%;
-      
-      &::after {
-        transform: translateX(0.25rem);
-      }
-    }
-  }
-  
-  &--cta-alt {
-    font-size: var(--zero-size-text-m);
-    line-height: 1;
-    font-weight: 500;
-    display: inline-block;
-    position: relative;
     padding-inline-end: calc(var(--zero-size-text-m) + 8px);
     padding-inline-start: 4px;
     padding-block: 6px;

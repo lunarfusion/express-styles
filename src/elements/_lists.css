@@ -7,7 +7,7 @@ li {
   color: var(--zero-color-fg);
   
   &::marker {
-    color: var(--zero-color-fg);
+    color: var(--zero-color-accent);
     font-weight: 600;
   }
 }

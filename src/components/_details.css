@@ -4,7 +4,6 @@
   border-radius: 8px;
   margin: 1px 0;
   
-  
   &__summmary {
     font-weight: 600;
     padding-block: 0.5rem;
@@ -17,5 +16,9 @@
   &__content {
     background: var(--zero-color-bg);
     padding: 1rem;
+  }
+  
+  &:last-of-type {
+    margin-block-end: 3rem;
   }
 }

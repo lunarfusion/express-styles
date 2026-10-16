@@ -26,8 +26,12 @@ app.get('/', (req, res) => {
   res.render('index', { title: 'Home Page' });
 });
 
-app.get('/hub', (req, res) => {
-  res.render('hub', { title: 'Content', layout: './layouts/sidebar' });
+app.get('/components', (req, res) => {
+  res.render('components', { title: 'Components', layout: './layouts/full-width' });
+});
+
+app.get('/landing', (req, res) => {
+  res.render('landing', { title: 'Landing Page', layout: './layouts/full-width' });
 });
 
 app.get('/content', (req, res) => {

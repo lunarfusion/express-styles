@@ -9,6 +9,8 @@
   --zero-color-fg: var(--zero-color-gray-010);
   --zero-color-fg-subdued: var(--zero-color-gray-030);
   --zero-color-fg-inverted: var(--zero-color-white);
+  --zero-color-fg-static-white: var(--zero-color-white);
+  --zero-color-fg-static-black: var(--zero-color-gray-090);
   
   /* Border */
   --zero-color-border: var(--zero-color-gray-040);
@@ -32,9 +34,9 @@
   --zero-color-focus-indicator: var(--zero-color-violet-070);
   
   /* Brand */
-  --zero-color-brand-primary: var(--zero-color-teal-030);
-  --zero-color-brand-primary-b: var(--zero-color-teal-050);
-  --zero-color-brand-primary-c: var(--zero-color-teal-070);
+  --zero-color-brand-primary: var(--zero-color-teal-020);
+  --zero-color-brand-primary-b: var(--zero-color-teal-030);
+  --zero-color-brand-primary-c: var(--zero-color-teal-050);
   
   --zero-color-brand-secondary: var(--zero-color-blue-060);
   --zero-color-brand-tertiary: var(--zero-color-violet-080);

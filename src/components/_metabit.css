@@ -18,11 +18,11 @@
       
       &::after {
         position: absolute;
-        content: "✦";
+        /* content: "✦"; */
+        content: "✤";
         width: var(--metabit-space);
         color: var(--zero-color-brand-primary);
-        font-size: 0.6rem;
-        line-height: 1.5;
+        font-size: 0.7rem;
         text-align: center;
       }
     }

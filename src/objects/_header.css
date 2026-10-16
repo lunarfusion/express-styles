@@ -1,9 +1,29 @@
 .header {
-  background-color: var(--zero-color-accent);
+  background: var(--zero-color-brand-primary);
   padding: calc(var(--zero-size-gap-y) * 2) calc(var(--zero-size-gap-x) * 2);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  
+  &__brandbar {
+    display: flex;
+    flex-flow: column;
+  }
+  
+  &__title {
+    font-size: var(--zero-size-text-xl);
+    line-height: 1.11;
+    font-weight: 600;
+    color: var(--zero-color-fg-static-white);
+    margin-block-end: 0.5rem;
+  }
+  
+  &__subtitle {
+    font-size: var(--zero-size-text-m);
+    line-height: 1.11;
+    font-weight: 500;
+    color: var(--zero-color-fg-static-white);
+  }
 }
 
 @media (max-width: 992px) {
