@@ -2,22 +2,33 @@
   --zero-size-gap-focus-indicator: 6px;
   --zero-size-focus-indicator: 2px;
   --zero-size-border-radius-button: 6px;
+  --zero-size-block-button: 40px;
   
-  display: inline-flex;
-  align-items: center;
   position: relative;
-  text-decoration: none;
+  display: inline-flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  
+  inline-size: auto;
+  max-inline-size: 100%;
+  block-size: var(--zero-size-block-button);
+  max-block-size: var(--zero-size-block-button);
   padding: 0.75rem 1.25rem;
+  
   font-family: var(--zero-font-primary);
   font-size: 1rem;
   font-weight: 500;
-  background: var(--zero-color-button-default);
-  color: var(--zero-color-fg-inverted);
+  color: var(--zero-color-fg-static-white);
   line-height: 1;
+  text-align: left;
+  text-decoration: none;
+  
+  background: var(--zero-color-button-default);
   border: 2px solid transparent;
   outline: none;
   box-shadow: none;
-  text-align: left;
   border-radius: var(--zero-size-border-radius-button);
   transition: all .3s ease;
   cursor: pointer;
@@ -45,12 +56,59 @@
     background: var(--zero-color-button-hover);
   }
   
-  &:focus::after {
-    opacity: 1;
-    display: block;
+  &:focus,
+  &:focus-within,
+  &:focus:active,
+  &:focus-visible:active,
+  &:active:focus,
+  &:active:focus-visible {
+    &::after {
+      opacity: 1;
+      display: block;
+    }
   }
   
   &:active {
     background: var(--zero-color-button-active);
+  }
+  
+  /*** Variants ***/
+  &--secondary {
+    color: var(--zero-color-fg);
+    border: 2px solid var(--zero-color-button-default);
+    background: transparent;
+    
+    &:hover,
+    &:focus {
+      border-color: var(--zero-color-button-hover);
+      background: transparent;
+    }
+    
+    &:active {
+      border-color: var(--zero-color-button-active);
+      background: transparent;
+    }
+  }
+  
+  &.disabled,
+  &:disabled,
+  &--disabled {
+    background: var(--zero-color-bg-disabled);
+    color: var(--zero-color-fg-disabled);
+    
+    &:hover,
+    &:focus,
+    &:active {
+      background: var(--zero-color-bg-disabled);
+    }
+  }
+  
+  &--width-full {
+    inline-size: 100%;
+  }
+  
+  /*** prevent focus from firing on click ***/
+  &:-webkit-focus-ring {
+    outline: none;
   }
 }

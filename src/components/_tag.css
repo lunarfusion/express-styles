@@ -1,0 +1,6 @@
+.tag {
+  font-size: var(--zero-size-text-xs);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}

@@ -8,6 +8,10 @@
   margin-left: auto;
   margin-right: auto;
   padding-inline: calc(var(--zero-size-gap-x) * 2);
+  
+  @media (max-width: 992px) {
+    padding-inline: var(--zero-size-gap-x);
+  }
 }
 
 .row {
@@ -17,10 +21,19 @@
   &--wrap {
     flex-wrap: wrap;
   }
+  
+  &--justify-even {
+    justify-content: space-evenly;
+  }
+  
+  &--justify-center {
+    justify-content: center;
+  }
 }
 
 .col {
-  --col-spacing: calc(--zero-size-gap-x * 2);
+  --col-spacing: calc(var(--zero-size-gap-x) * 0.5);
+  /* --col-spacing: var(--zero-size-gap-x); */
   
   position: relative;
   inline-size: auto;
@@ -29,46 +42,57 @@
   flex-grow: 1;
   flex-basis: 0;
   
-  padding-inline: var(--zero-size-gap-x);
+  padding-inline: var(--col-spacing);
   margin-block: var(--zero-size-gap-y);
   
   
   &--3 {
-    flex: 0 0 calc(25% - var(--zero-size-gap-x));
-    max-inline-size: calc(25% - var(--zero-size-gap-x));
+    flex: 0 0 calc(25% - var(--col-spacing));
+    max-inline-size: calc(25% - var(--col-spacing));
   }
   
   &--4 {
-    flex: 0 0 calc(33.33333% - var(--zero-size-gap-x));
-    max-inline-size: calc(33.33333% - var(--zero-size-gap-x));
+    flex: 0 0 calc(33.33333% - var(--col-spacing));
+    max-inline-size: calc(33.33333% - var(--col-spacing));
   }
   
   &--6 {
-    flex: 0 0 calc(50% - var(--zero-size-gap-x));
-    max-inline-size: calc(50% - var(--zero-size-gap-x));
+    flex: 0 0 calc(50% - var(--col-spacing));
+    max-inline-size: calc(50% - var(--col-spacing));
   }
   
   &--8 {
-    flex: 0 0 calc(66.66667% - var(--zero-size-gap-x));
-    max-inline-size: calc(66.66667% - var(--zero-size-gap-x));
+    flex: 0 0 calc(66.66667% - var(--col-spacing));
+    max-inline-size: calc(66.66667% - var(--col-spacing));
   }
   
   &--9 {
-    flex: 0 0 calc(75% - var(--zero-size-gap-x));
-    max-inline-size: calc(75% - var(--zero-size-gap-x));
+    flex: 0 0 calc(75% - var(--col-spacing));
+    max-inline-size: calc(75% - var(--col-spacing));
   }
 }
 
 @media (max-width: 992px) {
   
   .col--9,
-  .col--6,
-  .col--3 {
+  .col--8,
+  .col--6 {
     flex: 0 0 100%;
     max-inline-size: 100%;
+  }
+  
+  .col--4,
+  .col--3 {
+    flex: 0 0 calc(50% - var(--nrs-size-gap-x));
+    max-inline-size: calc(50% - var(--nrs-size-gap-x));
   }
 }
 
 @media (max-width: 776px) {
-  /* placeholder */
+  
+  .col--4,
+  .col--3 {
+    flex: 0 0 100%;
+    max-inline-size: 100%;
+  }
 }

@@ -13,6 +13,7 @@
 @import "utilities/_utilities-text.css";
 @import "utilities/_utilities-spacing.css";
 @import "utilities/_sr-only.css";
+@import "utilities/_utilities-background.css";
 
 /*** *** GENERIC *** ***/
 @import "generic/_base-resets.css";
@@ -39,6 +40,8 @@
 @import "components/_figure.css";
 @import "components/_metabit.css";
 @import "components/_banner.css";
+@import "components/_card.css";
+@import "components/_tag.css";
 
 /*** *** OBJECTS *** ***/
 @import "objects/_page.css";

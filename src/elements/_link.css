@@ -2,6 +2,9 @@
 p a,
 li a,
 .link {
+  --size-link-decoration: 3px;
+  --size-link-decoration-cta: 5px;
+  
   color: var(--zero-color-link-default);
   transition: var(--zero-transition-basic);
   font-weight: 500;
@@ -9,11 +12,11 @@ li a,
   background: linear-gradient(to right, var(--zero-color-link-decoration), var(--zero-color-link-decoration));
   background-repeat: no-repeat;
   background-position: 0% 105%;
-  background-size: 0% 3px;
+  background-size: 0% var(--size-link-decoration);
   
   &:hover {
     color: var(--zero-color-link-hover);
-    background-size: 100% 3px;
+    background-size: 100% var(--size-link-decoration);
   }
   
   &:focus,
@@ -44,7 +47,7 @@ li a,
     padding-block: 6px;
     background-repeat: no-repeat;
     background-position: 0% 105%;
-    background-size: 0% 5px;
+    background-size: 0% var(--size-link-decoration-cta);
     
     /* if icon after */
     &::after {
@@ -61,7 +64,7 @@ li a,
     }
     
     &:hover {
-      background-size: 100% 5px;
+      background-size: 100% var(--size-link-decoration-cta);
       
       &::after {
         transform: translateX(0.25rem);

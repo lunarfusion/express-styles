@@ -40,4 +40,14 @@
   
   --zero-color-brand-secondary: var(--zero-color-blue-060);
   --zero-color-brand-tertiary: var(--zero-color-violet-080);
+  
+  /* Disabled */
+  --zero-color-bg-disabled: var(--zero-color-gray-080);
+  --zero-color-fg-disabled: var(--zero-color-gray-050);
+  
+  .theme-primary {
+    --zero-color-bg: var(--zero-color-brand-primary);
+    --zero-color-fg: var(--zero-color-white);
+    --zero-color-fg-subdued: var(--zero-color-gray-090);
+  }
 }
